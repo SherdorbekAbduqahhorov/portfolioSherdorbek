@@ -3,6 +3,7 @@
       padding: 0;
       box-sizing: border-box;
   }
+body, html { overflow-x: hidden; }
 
   body {
     background: black;
@@ -336,55 +337,36 @@ span{
 
 @media (max-width:630px) {
   .divIntraduction{
-    margin-left: 50px;
-    padding-right: 100px;
+    margin: 0 auto;   /* markazlashtiradi */
+    padding: 50px 10px; /* top/bottom:50px, left/right:10px */
+    flex-direction: column;
     justify-content: center;
-    padding-right: 10;
-    padding-top: 50px;
-  }
-  .iconChisiq{
-    width: 30px;
-    height: 30px;}
-
-    .iconsline{
-      width: 300px;
-      height: 300px;
-      padding: 10px;
-    }
-
-  .divMatnInto h1{
-    font-size: 40px;
-    width: 300px;
-  }
-  .but1{
-    font-size: 12px;
-    margin-left: 5px;
-    width: 130px;
-  }
-   .but2{
-    font-size: 12px;
-    width: 130px;
-  }
-  nav{
-    padding: 10px 15px;
-  }
-  .buttonlar{
-    justify-content: center;
+    text-align: center;
   }
 }
 
-
-
 @media (max-width:480px) {
-  .divMatnInto h1{
-    font-size: 30px;
-  }
-  .buttonlar{
+  .divIntraduction{
+    margin: 0 auto;   /* markazlash */
+    padding: 30px 10px; /* kichik ekran uchun */
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
-   .divIntraduction{
-    margin: auto;
-    justify-content: center;
-    margin-left: 50px;
-   }
+}
+@media (max-width:630px) {
+  .iconsline{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto; /* markazlash */
+  }
+
+  .html5 { top: 10%; left: 5%; }
+  .book { top: 25%; left: 65%; }
+  .react { top: 45%; left: 15%; }
+  .reactos { top: 65%; left: 35%; }
+  .vite { top: 15%; left: 45%; }
+  .css3 { top: 55%; left: 70%; }
+  .github { top: 75%; left: 5%; }
+  .tailwind { top: 35%; left: 35%; }
 }
