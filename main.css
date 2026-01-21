@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-image: url(./img/topBg.jpg);
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center -450px;
+    background-size: 110% auto;
+
+
+}

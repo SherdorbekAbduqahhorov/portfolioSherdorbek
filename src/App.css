@@ -1,0 +1,380 @@
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+    background: black;
+    color: white;
+  }
+  a{
+    text-decoration: none;  
+    color: white;
+  }
+
+/* header qismi===================== */
+
+header {
+  background-image: url(./assets/yarm.jpg);
+  width: 100%;   
+  background-repeat: no-repeat;
+  background-position: top center; 
+  background-size: contain;     
+  background-color: #000; 
+}
+
+
+
+
+nav {
+  width: 100%;
+  top: 0;   
+  left: 0;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;  
+}
+
+
+  nav p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 25px;
+  }
+  .imgPortifolio{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .divHome {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  padding: 7px 20px;
+  background: rgba(31, 30, 30, 0.5); 
+  border-radius: 20px;
+  color: #fff;
+}
+
+  .divHome a{
+    color: white;
+    transition: all 0.3s;
+  }
+  .divHome a:hover{
+    transform: scale(1.1);  
+    color: white;
+    
+  }
+  .divHome a:active{
+    transform: scale(1.2);  
+  }
+  .iconsDiv{
+    display: flex;
+    gap: 15px;
+  }
+  .icon{
+    width: 23px;
+    height: 23px;
+    transition: all 0.3s;
+  }
+  .icon:hover{
+    transform: scale(1.2);  
+    color: blueviolet;
+  }
+  .icon:active{
+    transform: scale(1.3);  
+  }
+
+  @media (max-width:720px) {
+    .divHome{
+      display: none;
+    }
+  }
+
+  /* intraduction====================== */
+
+  .divIntraduction{
+    padding:0 85px;
+    padding-top:67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+  }
+  .divimg{
+    margin-top: 150px;
+  }
+  .divimg img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .divMatnInto h1{
+    font-size: 60px;
+    width: 100%;
+    max-width:500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  span{
+    color: blueviolet;
+  }
+  .buttonlar{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+  }
+  .but1{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    color: white;
+    /* background: linear-gradient(to right, rgb(106, 8, 199)  , rgb(68, 68, 229)); */
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.4s;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.6);
+  }
+  .but2{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    color: white;
+    /* background: linear-gradient(to right, rgb(77, 77, 240),blueviolet); */
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.4s;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.6);
+  }
+  .but1:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right,blueviolet, rgb(77, 77, 240));
+    box-shadow: 0 6px 25px rgba(138, 43, 226, 0.9)
+  }
+  .but1:active{
+    transform: scale(1.2);
+  }
+  .but2:hover{
+    transform: scale(1.1);
+    background: linear-gradient(to right,blueviolet, rgb(77, 77, 240));
+    box-shadow: 0 6px 25px rgba(138, 43, 226, 0.9)
+  }
+  .but2:active{
+    transform: scale(1.2);
+  }
+/* animarsiyalar======================================= */
+.divIntraduction{
+  animation: introFade 1.2s ease-out forwards;
+}
+
+@keyframes introFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.divimg img{
+  animation: floatImg 4s ease-in-out infinite;
+  box-shadow: 0 0 25px rgba(138,43,226,0.8);
+}
+
+@keyframes floatImg {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+
+.divMatnInto p,
+.divMatnInto h1,
+.divMatnInto div {
+  opacity: 0;
+  animation: textIn 1s ease forwards;
+}
+
+.divMatnInto p { animation-delay: 0.3s; }
+.divMatnInto h1 { animation-delay: 0.6s; }
+.divMatnInto div { animation-delay: 0.9s; }
+
+@keyframes textIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+span{
+  color: blueviolet;
+  text-shadow: 0 0 8px rgba(138,43,226,0.8);
+  animation: glowName 2s infinite alternate;
+}
+
+@keyframes glowName {
+  from {
+    text-shadow: 0 0 8px rgba(138,43,226,0.6);
+  }
+  to {
+    text-shadow: 0 0 18px rgba(138,43,226,1);
+  }
+}
+
+.but1, .but2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.but1::before, .but2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  50% { left: 120%; }
+  100% { left: 120%; }
+}
+
+.but1:hover, .but2:hover{
+  transform: scale(1.12) rotate(-1deg);
+}
+
+
+/* animarsiyalar======================================= */
+
+  .iconChisiq{
+    width: 50px;
+    height: 50px;
+    color: blueviolet;
+  }
+  .iconsline {
+  margin-top: 100px;
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background: transparent ;
+  overflow: hidden;
+}
+
+.iconChisiq {
+  position: absolute;
+  font-size: 2.5rem;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  animation: float 6s ease-in-out infinite;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.html5 { top: 10%; left: 5%; color: blueviolet; }
+.book { top: 30%; left: 70%; color: blue; }
+.react { top: 50%; left: 20%; color: blueviolet; }
+.reactos { top: 70%; left: 40%; color: blue; }
+.vite { top: 20%; left: 50%; color: blueviolet; }
+.css3 { top: 60%; left: 80%; color: blue; }
+.github { top: 80%; left: 10%; color: blueviolet; }
+.tailwind { top: 40%; left: 40%; color: blue; }
+
+.iconChisiq:hover {
+  transform: scale(1.3) rotate(15deg);
+}
+
+@keyframes float {
+  0% { transform: translate(0px, 0px); }
+  25% { transform: translate(5px, -10px); }
+  50% { transform: translate(-5px, 5px); }
+  75% { transform: translate(10px, -5px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@media (max-width:1000px) {
+
+  .divIntraduction{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+  .divMatnInto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttonlar{
+    justify-content: center;
+  }
+}
+
+@media (max-width:630px) {
+  .divIntraduction{
+    padding-right: 10;
+    padding-top: 50px;
+  }
+  .iconChisiq{
+    width: 30px;
+    height: 30px;}
+
+    .iconsline{
+      width: 300px;
+      height: 300px;
+      padding: 10px;
+    }
+
+  .divMatnInto h1{
+    font-size: 40px;
+    width: 300px;
+  }
+  .but1{
+    font-size: 12px;
+    margin-left: 5px;
+    width: 130px;
+  }
+   .but2{
+    font-size: 12px;
+    width: 130px;
+  }
+  nav{
+    padding: 10px 15px;
+  }
+  .buttonlar{
+    justify-content: center;
+  }
+}
+
+
+
+@media (max-width:480px) {
+  .divMatnInto h1{
+    font-size: 30px;
+  }
+  .buttonlar{
+    justify-content: center;
+  }
+}
