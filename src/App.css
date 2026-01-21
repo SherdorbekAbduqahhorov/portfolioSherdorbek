@@ -316,7 +316,7 @@ span{
 @media (max-width:1000px) {
 
   .divIntraduction{
-    margin-right: 1px;
+    padding-right: 1px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -336,7 +336,7 @@ span{
 
 @media (max-width:630px) {
   .divIntraduction{
-    margin-right: 1px;
+    padding-right: 100px;
     justify-content: center;
     padding-right: 10;
     padding-top: 50px;
@@ -382,6 +382,6 @@ span{
     justify-content: center;
   }
    .divIntraduction{
-    margin-right: 1px;
+    padding-right: 100px;
    }
 }
