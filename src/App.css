@@ -98,12 +98,10 @@ nav {
   /* intraduction====================== */
 
   .divIntraduction{
-    padding:0 85px;
     padding-top:67px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-right: 100px;
   }
   .divimg{
     margin-top: 150px;
