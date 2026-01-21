@@ -336,7 +336,7 @@ span{
 
 @media (max-width:630px) {
   .divIntraduction{
-    margin-left: 90px;
+    margin-left: 50px;
     padding-right: 100px;
     justify-content: center;
     padding-right: 10;
@@ -385,6 +385,6 @@ span{
    .divIntraduction{
     margin: auto;
     justify-content: center;
-    margin-left: 90px;
+    margin-left: 50px;
    }
 }
