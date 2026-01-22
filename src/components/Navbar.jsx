@@ -20,7 +20,7 @@ function Navbar() {
     <header>
 
 <div className="stars-container">
-  {Array.from({ length: 555 }).map((_, i) => (
+  {Array.from({ length: 50 }).map((_, i) => (
     <div className="star" key={i}></div>
   ))}
 </div>
