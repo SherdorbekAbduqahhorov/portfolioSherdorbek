@@ -12,7 +12,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaJsSquare } from "react-icons/fa";
 import { FaPhoneAlt, FaGithub } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-
+import { FaNode } from "react-icons/fa";
 
 
 function Navbar() {
@@ -70,9 +70,9 @@ function Navbar() {
 
           <div className='iconsline'>
   <FaHtml5 className='iconChisiq html5'/>
-  <IoBookSharp className='iconChisiq book'/>
+  <FaJsSquare className='iconChisiq book'/>
   <FaReact className='iconChisiq react'/>
-  <SiReactos className='iconChisiq reactos'/>
+  <FaNode className='iconChisiq reactos'/>
   <SiVite className='iconChisiq vite'/>
   <FaCss3Alt className='iconChisiq css3'/>
   <IoLogoGithub className='iconChisiq github'/>
@@ -144,7 +144,7 @@ function Navbar() {
       <div className="contactGrid">
         <a href="tel:+998903686757" className="contactCard">
           <FaPhoneAlt className="contactIcon" />
-          <p>Phone</p>
+          <p>Phone +998903686757</p>
         </a>
 
         <a href="https://t.me/Andrew77_77" target="_blank" rel="noopener noreferrer" className="contactCard">
